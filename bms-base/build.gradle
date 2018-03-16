@@ -1,0 +1,7 @@
+group 'cn.future'
+version '${rootProject.version}'
+
+dependencies {
+    compile project(":bms-core")
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
