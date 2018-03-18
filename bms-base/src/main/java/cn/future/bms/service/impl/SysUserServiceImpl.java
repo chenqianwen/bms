@@ -5,6 +5,7 @@ import cn.future.bms.dao.SysUserDao;
 import cn.future.bms.entity.SysUser;
 import cn.future.bms.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
@@ -53,7 +54,8 @@ class SysUserServiceImpl extends BaseServiceImpl<SysUser> implements SysUserServ
         List<SysUser> all = sysUserDao.findAll(this);
         List<Predicate> predicates = new ArrayList<>();
 //        addLikeCondition(queryWrapper, "username");
-        List<SysUser> alla = sysUserDao.findAll(andCondition("username").orCondition("password"));
+        QueryBuilder.and("username").or("password")
+        List<SysUser> alla = sysUserDao.findAll(QueryBuilder.and("username").or("password"));
         return all.get(0);
     }
 
