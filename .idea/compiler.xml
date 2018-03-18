@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bms-base_main" target="1.8" />
+      <module name="bms-base_test" target="1.8" />
+      <module name="bms-core_main" target="1.8" />
+      <module name="bms-core_test" target="1.8" />
+      <module name="bms-demo_main" target="1.8" />
+      <module name="bms-demo_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

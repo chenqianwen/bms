@@ -1,4 +1,5 @@
 rootProject.name = 'bms'
 include 'bms-core'
 include 'bms-base'
+include 'bms-demo'
 
