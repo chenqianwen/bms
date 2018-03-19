@@ -1,5 +1,6 @@
 package cn.future.bms.service.impl;
 
+import cn.future.bms.base.repository.support.QueryBuilder;
 import cn.future.bms.base.service.impl.BaseServiceImpl;
 import cn.future.bms.dao.SysUserDao;
 import cn.future.bms.entity.SysUser;
@@ -54,8 +55,9 @@ class SysUserServiceImpl extends BaseServiceImpl<SysUser> implements SysUserServ
         List<SysUser> all = sysUserDao.findAll(this);
         List<Predicate> predicates = new ArrayList<>();
 //        addLikeCondition(queryWrapper, "username");
-        QueryBuilder.and("username").or("password")
-        List<SysUser> alla = sysUserDao.findAll(QueryBuilder.and("username").or("password"));
+        QueryBuilder builder = new QueryBuilder();
+        builder.and("username").or("password");
+        List<SysUser> alla = sysUserDao.getAll(builder);
         return all.get(0);
     }
 
