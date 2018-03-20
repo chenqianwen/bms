@@ -5,5 +5,5 @@ dependencies {
     compile 'org.projectlombok:lombok'
     compile 'com.alibaba:fastjson:1.2.47'
     compile 'org.springframework.boot:spring-boot-starter'
-    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile 'com.alibaba:druid-spring-boot-starter'
 }

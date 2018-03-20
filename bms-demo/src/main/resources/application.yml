@@ -1,9 +1,14 @@
+server:
+  servlet:
+    context-path: 8090
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/bms?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123456
+    druid:
+      filter
   jpa:
     hibernate:
       ddl-auto: update

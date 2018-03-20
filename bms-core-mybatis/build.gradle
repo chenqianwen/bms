@@ -1,0 +1,6 @@
+group 'cn.future'
+version '${rootProject.version}'
+
+
+dependencies {
+}
