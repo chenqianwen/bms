@@ -3,10 +3,9 @@ version '${rootProject.version}'
 
 
 dependencies {
-    dependencies {
-        compile 'org.projectlombok:lombok'
-        compile 'com.alibaba:fastjson:1.2.47'
-        compile 'org.springframework.boot:spring-boot-starter'
-        compile 'org.springframework.boot:spring-boot-starter-data-jpa'
-    }
+    compile project(":bms-core")
+    compile 'org.projectlombok:lombok'
+    compile 'com.alibaba:fastjson:1.2.47'
+    compile 'org.springframework.boot:spring-boot-starter'
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
 }

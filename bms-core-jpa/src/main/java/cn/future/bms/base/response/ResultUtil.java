@@ -2,8 +2,6 @@ package cn.future.bms.base.response;
 
 import cn.future.bms.enums.ResultEnum;
 
-import java.net.HttpCookie;
-
 /**
  * @author： ygl
  * @date： 2018/3/17

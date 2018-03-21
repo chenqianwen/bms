@@ -1,6 +1,5 @@
 package cn.future.bms.base.repository;
 
-import cn.future.bms.base.repository.support.AbstractConditionBuilder;
 import org.springframework.data.jpa.domain.Specification;
 
 import javax.persistence.criteria.CriteriaBuilder;

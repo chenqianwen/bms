@@ -1,7 +1,7 @@
 package cn.future.bms.base.repository.impl;
 
-import cn.future.bms.base.repository.BaseRepository;
 import cn.future.bms.base.entity.BaseEntity;
+import cn.future.bms.base.repository.BaseRepository;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.support.JpaEntityInformation;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;

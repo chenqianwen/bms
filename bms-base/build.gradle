@@ -2,7 +2,6 @@ group 'cn.future'
 version '${rootProject.version}'
 
 dependencies {
-    compile project(":bms-core")
-    compile 'mysql:mysql-connector-java'
+    compile project(":bms-core-jpa")
     compile 'org.springframework.boot:spring-boot-starter-web'
 }

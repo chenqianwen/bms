@@ -21,7 +21,7 @@ import java.util.List;
  * @Description：
  */
 @Service
-class SysUserServiceImpl extends BaseServiceImpl<SysUser> implements SysUserService {
+class SysUserServiceImpl  implements SysUserService {
 
     @Autowired
     private SysUserDao sysUserDao;
@@ -52,25 +52,25 @@ class SysUserServiceImpl extends BaseServiceImpl<SysUser> implements SysUserServ
                 return null;
             }
         };
-        List<SysUser> all = sysUserDao.findAll(this);
+        List<SysUser> all = sysUserDao.findAll(spec);
         List<Predicate> predicates = new ArrayList<>();
 //        addLikeCondition(queryWrapper, "username");
         QueryBuilder builder = new QueryBuilder();
         builder.and("username").or("password");
-        List<SysUser> alla = sysUserDao.getAll(builder);
+//        List<SysUser> alla = sysUserDao.getAll(builder);
         return all.get(0);
     }
 
 
 
-    @Override
-    public List<Predicate> addCondition(Root<SysUser> root, CriteriaQuery<?> query,CriteriaBuilder builder){
-        Path<Object> id1 = root.get("id");
-        Predicate predicate = builder.equal(id1, "424676105174200320");
-        List<Predicate> list = new ArrayList<>();
-        list.add(predicate);
-        return list;
-    }
+//    @Override
+//    public List<Predicate> addCondition(Root<SysUser> root, CriteriaQuery<?> query,CriteriaBuilder builder){
+//        Path<Object> id1 = root.get("id");
+//        Predicate predicate = builder.equal(id1, "424676105174200320");
+//        List<Predicate> list = new ArrayList<>();
+//        list.add(predicate);
+//        return list;
+//    }
 
     /**
      * 自定义条件
