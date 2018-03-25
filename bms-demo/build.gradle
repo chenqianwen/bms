@@ -1,7 +1,11 @@
 group 'cn.future'
 version '${rootProject.version}'
 
+apply plugin: 'org.springframework.boot'
+apply plugin: 'idea'
+
 dependencies {
-    compile project(":bms-base-mybatis")
-   
+    compile project(':bms-base-mybatis')
+    compile project(':bms-core')
+    compile project(':bms-common')
 }

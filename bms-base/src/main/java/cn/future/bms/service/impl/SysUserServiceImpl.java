@@ -1,7 +1,7 @@
 package cn.future.bms.service.impl;
 
 import cn.future.bms.base.repository.support.QueryBuilder;
-import cn.future.bms.base.service.impl.BaseServiceImpl;
+//import cn.future.bms.base.service.impl.BaseServiceImpl;
 import cn.future.bms.dao.SysUserDao;
 import cn.future.bms.entity.SysUser;
 import cn.future.bms.service.SysUserService;

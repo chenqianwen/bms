@@ -1,7 +1,6 @@
 package cn.future.bms.mapper;
 
 import cn.future.bms.entity.SysUser;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

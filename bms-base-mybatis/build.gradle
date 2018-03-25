@@ -5,7 +5,7 @@ dependencies {
     compile project(":bms-core-mybatis")
     compile 'mysql:mysql-connector-java'
     compile 'org.springframework.boot:spring-boot-starter-web'
-    compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.2")
-    compile "tk.mybatis:mapper-spring-boot-starter:1.2.4"
-    compile "com.github.pagehelper:pagehelper-spring-boot-starter:1.2.3"
+    compile 'org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.2'
+    compile 'tk.mybatis:mapper-spring-boot-starter:1.2.4'
+    compile 'com.github.pagehelper:pagehelper-spring-boot-starter:1.2.3'
 }

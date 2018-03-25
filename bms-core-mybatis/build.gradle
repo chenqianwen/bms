@@ -2,6 +2,7 @@ group 'cn.future'
 version '${rootProject.version}'
 
 dependencies {
+    compile project(":bms-core")
     compile 'org.projectlombok:lombok'
     compile 'com.baomidou:mybatis-plus:2.1.9'
     compile 'com.baomidou:mybatisplus-spring-boot-starter:1.0.5'

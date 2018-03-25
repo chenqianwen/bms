@@ -15,7 +15,7 @@ public class DruidStatViewServlet {
     private String urlPattern;
     private String allow;
     private String deny;
-    private String loginUsername;
-    private String loginPassword;
+    private String loginUsername = "jack";
+    private String loginPassword = "jack";
     private String resetEnable;
 }

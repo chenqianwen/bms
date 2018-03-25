@@ -1,0 +1,9 @@
+group 'cn.future'
+version '${rootProject.version}'
+
+dependencies {
+    compile project(':bms-core')
+    compile 'org.projectlombok:lombok'
+    compile 'com.github.tobato:fastdfs-client:1.26.1-RELEASE'
+//    compile fileTree(dir:'libs',include:['*.jar'])
+}

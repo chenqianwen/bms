@@ -29,7 +29,7 @@ CriteriaQuery接口：代表一个specific的顶层查询对象，它包含着�
 比如：select 、from、where、group by、order by等
 注意：CriteriaQuery对象只对实体类型或嵌入式类型的Criteria查询起作用
 Root接口：代表Criteria查询的根对象，Criteria查询的查询根定义了实体类型，能为将来导航获得想要的结果，它与SQL查询中的FROM子句类似
-3：通过调用CriteriaQuery的from方法可以获得Root实例过滤条件
+通过调用CriteriaQuery的from方法可以获得Root实例过滤条件
 A：过滤条件会被应用到SQL语句的FROM子句中。在criteria 查询中，查询条件通过Predicate或Expression实例应用到CriteriaQuery对象上。
 B：这些条件使用 CriteriaQuery .where 方法应用到CriteriaQuery 对象上
 C：CriteriaBuilder也作为Predicate实例的工厂，通过调用CriteriaBuilder 的条件  方（ equal,notEqual， gt， ge，lt， le，between，like等）创建Predicate对象。
@@ -43,3 +43,5 @@ D：复合的Predicate 语句可以使用CriteriaBuilder的and, or andnot 方法
          */  
     query.where(cb.like(namePath, "%李%"), cb.like(nicknamePath, "%王%")); //这里可以设置任意条查询条件  
    }  
+6.集成swagger2：访问地址http://localhost:port/swagger-ui.html
+7.
