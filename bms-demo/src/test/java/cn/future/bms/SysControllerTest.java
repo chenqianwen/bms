@@ -1,6 +1,6 @@
 package cn.future.bms;
 
-//import cn.future.bms.service.SysUserService;
+//import SysUserService;
 import lombok.extern.slf4j.Slf4j;
           import org.junit.runner.RunWith;
           import org.springframework.boot.test.context.SpringBootTest;

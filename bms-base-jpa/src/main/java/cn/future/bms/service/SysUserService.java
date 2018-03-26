@@ -1,6 +1,6 @@
 package cn.future.bms.service;
 
-import cn.future.bms.entity.SysUser;
+import cn.future.bms.support.entity.SysUser;
 
 /**
  * @author： ygl

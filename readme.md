@@ -17,6 +17,9 @@ bms-base: 基类：
 rbac，数据权限
 用户管理,角色管理,部门管理,字典管理
 
+bms-base-mybatis: 基类需要用mybatis的
+
+
 
 
 1.实现IdGenerator接口，自定义ID生成规则

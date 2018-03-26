@@ -1,12 +1,9 @@
 package cn.future.bms.fdfs;
 
 import com.github.tobato.fastdfs.domain.FileInfo;
-import com.github.tobato.fastdfs.domain.StorageNodeInfo;
 import com.github.tobato.fastdfs.domain.StorePath;
 import com.github.tobato.fastdfs.exception.FdfsUnsupportStorePathException;
-import com.github.tobato.fastdfs.proto.storage.StorageQueryFileInfoCommand;
 import com.github.tobato.fastdfs.service.FastFileStorageClient;
-import com.sun.deploy.association.utility.AppConstants;
 import org.apache.commons.io.FilenameUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,8 +29,6 @@ public class FastDFSClientWrapper {
     @Autowired
     private FastFileStorageClient storageClient;
 
-//    @Autowired
-//    private AppConfig appConfig;   // 项目参数配置
 
     /**
      * 上传文件
@@ -59,7 +54,11 @@ public class FastDFSClientWrapper {
         return getResAccessUrl(storePath);
     }
 
-    // 封装图片完整URL地址
+    /**
+     * 封装图片完整URL地址
+     * @param storePath
+     * @return
+     */
     private String getResAccessUrl(StorePath storePath) {
         String fileUrl =  storePath.getFullPath();
         return fileUrl;

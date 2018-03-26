@@ -1,8 +1,11 @@
-package cn.future.bms.entity;
+package cn.future.bms.support.entity;
 
-import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -14,6 +17,8 @@ import java.util.Date;
 @Data
 public class BaseEntity implements Serializable {
 
+        @Id
+        @Column(name = "id")
         private String id;
 
         private Date createdDate;

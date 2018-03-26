@@ -1,23 +1,24 @@
 package cn.future.bms.enums;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 /**
  * @author： ygl
- * @date： 2018/3/17
+ * @date： 2018/3/26
  * @Description：
+ * enumeration of result
  */
+@AllArgsConstructor
 public enum  ResultEnum {
-    OK(0,"ok"),ERROR(1,"error");
+
+    OK(0,"成功"),
+    ERROR(1,"失败");
 
     @Getter
-    int code;
+    private int code;
     @Getter
-    String msg;
-
-    ResultEnum(int code, String msg) {
-        this.code = code;
-        this.msg = msg;
-    }
+    private String msg;
 }

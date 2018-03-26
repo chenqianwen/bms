@@ -1,8 +1,8 @@
 package cn.future.bms.controller;
 
-import cn.future.bms.base.response.Result;
-import cn.future.bms.base.response.ResultUtil;
-import cn.future.bms.entity.SysUser;
+import cn.future.bms.response.Result;
+import cn.future.bms.response.ResultHelper;
+import cn.future.bms.support.entity.SysUser;
 import cn.future.bms.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,12 +29,12 @@ public class SysUserController {
         SysUser user = new SysUser();
         user.setBirthday(new Date());
         user = sysUserService.save(user);
-        return ResultUtil.ok(user);
+        return ResultHelper.ok(user);
     }
 
     @GetMapping("/{id}")
     public Result find(@PathVariable  String id){
         SysUser user = sysUserService.findById(id);
-        return ResultUtil.ok(user);
+        return ResultHelper.ok(user);
     }
 }

@@ -1,12 +1,12 @@
-package cn.future.bms.base.response;
+package cn.future.bms.response;
 
 import lombok.Data;
 
 /**
  * @author： ygl
- * @date： 2018/3/17
+ * @date： 2018/3/26
  * @Description：
- * 返回结果封装
+ * result to response
  */
 @Data
 public class Result {

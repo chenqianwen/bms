@@ -2,6 +2,6 @@ group 'cn.future'
 version '${rootProject.version}'
 
 dependencies {
-    compile project(":bms-core-jpa")
+    compile project(':bms-core')
     compile 'org.springframework.boot:spring-boot-starter-web'
 }

@@ -1,7 +1,6 @@
 package cn.future.bms.config.swagger;
 
 import cn.future.bms.config.druid.properties.DruidProperties;
-import cn.future.bms.enums.ResultEnum;
 import com.fasterxml.classmate.TypeResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -20,12 +19,10 @@ import springfox.documentation.swagger.web.*;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
 import static com.google.common.base.Predicates.or;
 import static com.google.common.collect.Lists.newArrayList;
-import static springfox.documentation.builders.PathSelectors.regex;
 import static springfox.documentation.schema.AlternateTypeRules.newRule;
 
 

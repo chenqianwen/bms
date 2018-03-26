@@ -6,4 +6,5 @@ include 'bms-demo'
 include 'bms-core-jpa'
 include 'bms-base-mybatis'
 include 'bms-common'
+include 'bms-base-jpa'
 

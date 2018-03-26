@@ -1,0 +1,7 @@
+group 'cn.future'
+version '${rootProject.version}'
+
+dependencies {
+    compile project(":bms-base")
+    compile project(":bms-core-jpa")
+}

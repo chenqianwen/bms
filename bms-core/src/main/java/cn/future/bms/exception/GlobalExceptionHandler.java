@@ -1,5 +1,6 @@
 package cn.future.bms.exception;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -13,11 +14,13 @@ import java.io.IOException;
  * @Description：
  * 全局异常处理器
  */
+@Slf4j
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(value = Exception.class)
     public void globalException(HttpServletRequest req, HttpServletResponse res, Exception e) throws IOException {
+        log.error(e.toString());
         res.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR,e.getMessage());
     }
 

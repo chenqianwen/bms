@@ -1,20 +1,28 @@
 package cn.future.bms.entity;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import cn.future.bms.support.entity.BaseEntity;
 import lombok.Data;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import java.util.Date;
 
 /**
  * @author： ygl
- * @date： 2018/3/20
+ * @date： 2018/3/26
  * @Description：
  */
-@ApiModel(value = "SysUser", description = "系统用户模型")
 @Data
+@Table(name="sys_user")
 public class SysUser extends BaseEntity {
 
-    @ApiModelProperty(value = "用户名")
+    @Column(name ="username")
     private String username;
 
+    @Column(name ="password")
     private String password;
+
+    @Column(name ="birthday")
+    private Date birthday;
 }
