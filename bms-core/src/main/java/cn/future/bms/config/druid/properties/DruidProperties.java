@@ -87,6 +87,14 @@ public class DruidProperties {
      */
     private long maxEvictableIdleTimeMillis= 600000;
     /**
+     *  合并多个DruidDataSource的监控数据
+     */
+    private boolean useGlobalDataSourceStat= true;
+    /**
+     *  过connectProperties属性来打开mergeSql功能；慢SQL记录
+     */
+    private String connectionProperties= "druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000";
+    /**
      * 配置监控统计拦截的filters
      */
     private String filters= "stat,wall,log4j";
