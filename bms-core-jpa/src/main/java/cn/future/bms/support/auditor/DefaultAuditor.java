@@ -1,4 +1,4 @@
-package cn.future.bms.auditor;
+package cn.future.bms.support.auditor;
 
 import org.springframework.data.domain.AuditorAware;
 

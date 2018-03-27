@@ -1,6 +1,6 @@
 package cn.future.bms.config;
 
-import cn.future.bms.auditor.DefaultAuditor;
+import cn.future.bms.support.auditor.DefaultAuditor;
 import cn.future.bms.id.IdGenerator;
 import cn.future.bms.id.impl.DefaultIdGenerator;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

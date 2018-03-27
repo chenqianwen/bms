@@ -1,7 +1,7 @@
 package cn.future.bms.config;
 
-import cn.future.bms.auditor.AuditorService;
-import cn.future.bms.auditor.DefaultAuditorServiceImpl;
+import cn.future.bms.support.auditor.AuditorService;
+import cn.future.bms.support.auditor.DefaultAuditorServiceImpl;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

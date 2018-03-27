@@ -1,6 +1,5 @@
 package cn.future.bms.support.service.impl;
 
-import cn.future.bms.auditor.AuditorService;
 import cn.future.bms.support.entity.BaseEntity;
 import cn.future.bms.support.mapper.BaseMapper;
 import cn.future.bms.support.service.IBaseService;
