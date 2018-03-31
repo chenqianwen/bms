@@ -1,8 +1,8 @@
 package cn.future.bms.service.impl;
 
-import cn.future.bms.entity.SysUser;
-import cn.future.bms.mapper.SysUserMapper;
-import cn.future.bms.service.ISysUserService;
+import cn.future.bms.entity.SysUserRole;
+import cn.future.bms.mapper.SysUserRoleMapper;
+import cn.future.bms.service.ISysUserRoleService;
 import cn.future.bms.support.service.impl.BaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,9 +13,9 @@ import org.springframework.stereotype.Service;
  * @Description：
  */
 @Service
-public class SysUserServiceImpl extends BaseServiceImpl<SysUser> implements ISysUserService {
+public class SysUserRoleServiceImpl extends BaseServiceImpl<SysUserRole> implements ISysUserRoleService {
 
     @Autowired
-    private SysUserMapper sysUserMapper;
+    private SysUserRoleMapper sysUserRoleMapper;
 
 }

@@ -1,6 +1,7 @@
 package cn.future.bms.base.repository;
 
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.util.StringUtils;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -15,7 +16,6 @@ import java.util.List;
  * @Description：
  */
 public class BaseSpecification<T,C> implements Specification<T> {
-
     /**
      * 查询条件的dto
      */

@@ -8,4 +8,5 @@ dependencies {
     compile project(':bms-base-mybatis')
     compile project(':bms-core')
     compile project(':bms-common')
+    compile 'org.springframework.boot:spring-boot-starter-freemarker'
 }

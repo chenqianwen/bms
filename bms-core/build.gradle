@@ -3,6 +3,8 @@ version '${rootProject.version}'
 
 dependencies {
     compile 'org.projectlombok:lombok'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.7'
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
     compile 'com.alibaba:fastjson:1.2.47'
     compile 'org.springframework.boot:spring-boot-starter'
     compile 'org.springframework.boot:spring-boot-starter-web'

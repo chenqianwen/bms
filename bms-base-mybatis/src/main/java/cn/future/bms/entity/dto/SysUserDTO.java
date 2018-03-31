@@ -1,11 +1,13 @@
 package cn.future.bms.entity.dto;
 
 import cn.future.bms.entity.SysUser;
+import lombok.Data;
 
 /**
  * @author： ygl
- * @date： 2018/3/26
+ * @date：  2018/03/31-15:10
  * @Description：
  */
-public class SysUserReqDto extends SysUser{
+@Data
+public class SysUserDTO extends SysUser{
 }

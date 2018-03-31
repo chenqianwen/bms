@@ -9,6 +9,11 @@ import tk.mybatis.spring.annotation.MapperScan;
  * @Description：
  */
 @Configuration
-@MapperScan(basePackages = "cn.future.bms.mapper")
+@MapperScan(basePackages = MybatisConfig.basePackages)
 public class MybatisConfig {
+
+    /**
+     * mapper 包路径
+     */
+    public final static String basePackages = "cn.future.bms.mapper";
 }
