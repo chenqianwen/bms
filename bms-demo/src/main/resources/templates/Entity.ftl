@@ -1,5 +1,5 @@
 package ${packageName};
-import cn.future.bms.support.entity.BaseEntity;
+import BaseEntity;
 import lombok.Data;
 import javax.persistence.Column;
 import javax.persistence.Table;

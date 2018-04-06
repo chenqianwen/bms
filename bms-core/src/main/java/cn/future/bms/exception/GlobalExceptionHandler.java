@@ -20,7 +20,9 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(value = Exception.class)
     public void globalException(HttpServletRequest req, HttpServletResponse res, Exception e) throws IOException {
-        log.error(e.toString());
+        for (StackTraceElement stackTraceElement : e.getStackTrace()) {
+            log.error("       "+ stackTraceElement.toString());
+        }
         res.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR,e.getMessage());
     }
 

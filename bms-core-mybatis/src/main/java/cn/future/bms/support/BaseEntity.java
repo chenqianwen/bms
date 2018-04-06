@@ -1,11 +1,10 @@
-package cn.future.bms.support.entity;
+package cn.future.bms.support;
 
 import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
 import java.io.Serializable;
-import java.sql.Timestamp;
 import java.util.Date;
 
 /**

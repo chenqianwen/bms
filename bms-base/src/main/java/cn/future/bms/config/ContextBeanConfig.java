@@ -6,7 +6,11 @@ import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author： ygl
@@ -30,7 +34,12 @@ public class ContextBeanConfig {
         FastJsonConfig fastJsonConfig = new FastJsonConfig();
         fastJsonConfig.setSerializerFeatures(SerializerFeature.WriteMapNullValue);
 
-        //3. 在converter中添加配置信息
+        //3.处理中文乱码问题
+        List<MediaType> fastMediaTypes = new ArrayList<>();
+        fastMediaTypes.add(MediaType.APPLICATION_JSON_UTF8);
+        fasHttpMessageConverter.setSupportedMediaTypes(fastMediaTypes);
+
+        //4. 在converter中添加配置信息
         fasHttpMessageConverter.setFastJsonConfig(fastJsonConfig);
         HttpMessageConverter<?> converter = fasHttpMessageConverter;
         return new HttpMessageConverters(converter);

@@ -1,7 +1,7 @@
 package cn.future.bms.dao;
 
 import cn.future.bms.base.repository.BaseRepository;
-import cn.future.bms.support.entity.SysUser;
+import cn.future.bms.support.SysUser;
 
 /**
  * @author： ygl

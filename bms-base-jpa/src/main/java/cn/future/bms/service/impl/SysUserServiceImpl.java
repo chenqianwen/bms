@@ -3,7 +3,7 @@ package cn.future.bms.service.impl;
 import cn.future.bms.base.repository.support.QueryBuilder;
 //import cn.future.bms.base.service.impl.BaseServiceImpl;
 import cn.future.bms.dao.SysUserDao;
-import cn.future.bms.support.entity.SysUser;
+import cn.future.bms.support.SysUser;
 import cn.future.bms.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;

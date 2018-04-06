@@ -32,7 +32,7 @@ public class CodeGenerator {
     /**
      * 通过表名生成对应的代码
      */
-    private final String tableName = "sys_resource";
+    private final String tableName = "dictionary";
     /**
      * 代码生成目录
      */

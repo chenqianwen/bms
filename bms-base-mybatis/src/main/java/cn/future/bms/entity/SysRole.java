@@ -1,9 +1,8 @@
 package cn.future.bms.entity;
-import cn.future.bms.support.entity.BaseEntity;
+import cn.future.bms.support.BaseEntity;
 import lombok.Data;
 import javax.persistence.Column;
 import javax.persistence.Table;
-import java.util.Date;
 
 /**
  * @author： ygl

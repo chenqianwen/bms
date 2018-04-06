@@ -47,6 +47,7 @@ D：复合的Predicate 语句可以使用CriteriaBuilder的and, or andnot 方法
     query.where(cb.like(namePath, "%李%"), cb.like(nicknamePath, "%王%")); //这里可以设置任意条查询条件  
    }  
 6.集成swagger2：访问地址http://localhost:port/swagger-ui.html
+7.集成druid:localhost:8010/api/druid/login.html
 7.集成mybatis，通用mapper，baseMapper,baseService,baseServiceImpl,baseController
 封装了常用的数据库操作，crud
 8.freemarker做的代码生成器，可以通过表名生成entity,mapper,mapper.xml,service,serviceImpl,controller

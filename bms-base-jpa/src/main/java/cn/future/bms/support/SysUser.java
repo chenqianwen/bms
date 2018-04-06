@@ -1,4 +1,4 @@
-package cn.future.bms.support.entity;
+package cn.future.bms.support;
 
 import cn.future.bms.base.entity.BaseEntity;
 import lombok.Data;

@@ -1,9 +1,8 @@
 package cn.future.bms.entity;
-import cn.future.bms.support.entity.BaseEntity;
+import cn.future.bms.support.BaseEntity;
 import lombok.Data;
 import javax.persistence.Column;
 import javax.persistence.Table;
-import java.util.Date;
 
 /**
  * @author： ygl
@@ -46,8 +45,8 @@ public class SysResource extends BaseEntity{
     @Column(name = "parent_id")
     private String parentId;
     /**
-     * 下一个同级资源主键
+     * 上一个同级资源主键
      */
-    @Column(name = "next_id")
-    private String nextId;
+    @Column(name = "previous_id")
+    private String previousId;
 }

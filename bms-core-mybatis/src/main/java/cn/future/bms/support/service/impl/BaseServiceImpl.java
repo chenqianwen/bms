@@ -1,12 +1,12 @@
 package cn.future.bms.support.service.impl;
 
 import cn.future.bms.support.auditor.AuditorService;
-import cn.future.bms.support.entity.BaseEntity;
+import cn.future.bms.support.BaseEntity;
 import cn.future.bms.support.mapper.BaseMapper;
 import cn.future.bms.support.service.IBaseService;
 import cn.future.bms.util.IdGenerateHelper;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.StringUtils;
 
 import java.sql.Timestamp;
 import java.util.Date;
@@ -92,15 +92,13 @@ public class BaseServiceImpl<T extends BaseEntity> implements IBaseService<T> {
 
     @Override
     public List<T> findByIdArray(String[] idArray) {
-//        String ids = StringUtils.join(idArray, ",");
-//        return findByIds(ids);
-        return null;
+        String ids = StringUtils.join(idArray, ",");
+        return findByIds(ids);
     }
 
     @Override
     public List<T> findByIdList(List<String> idList) {
-//        String ids = StringUtils.join(idList, ",");
-//        return findByIds(ids);
-        return null;
+        String ids = StringUtils.join(idList, ",");
+        return findByIds(ids);
     }
 }
