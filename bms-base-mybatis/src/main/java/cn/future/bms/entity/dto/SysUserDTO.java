@@ -10,4 +10,10 @@ import lombok.Data;
  */
 @Data
 public class SysUserDTO extends SysUser{
+
+    private String account;
+
+    private String password;
+
+    private Boolean checkbox;
 }
