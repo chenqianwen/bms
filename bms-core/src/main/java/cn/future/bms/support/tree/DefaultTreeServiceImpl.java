@@ -51,7 +51,7 @@ public class DefaultTreeServiceImpl<M,RM> implements ITreeService<M,RM> {
             treeModelList.add(treeModel);
         });
         // 设置每个节点的子节点
-        treeModelList.forEach(treeModel -> treeModel.setChildren(getChildren(treeModel,treeModelList)));
+        treeModelList.forEach(treeModel -> treeModel    .setChildren(getChildren(treeModel,treeModelList)));
         // 取到所有根节点
         List<TreeModel> rootList = getRootList(parentId,includeParent,treeModelList);
         return rootList;

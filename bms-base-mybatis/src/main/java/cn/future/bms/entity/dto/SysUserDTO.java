@@ -11,7 +11,7 @@ import lombok.Data;
 @Data
 public class SysUserDTO extends SysUser{
 
-    private String account;
+    private String username;
 
     private String password;
 
